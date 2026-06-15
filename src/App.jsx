@@ -4566,6 +4566,9 @@ function App() {
             <span className="footer-globe-badge">
               <span className="footer-globe-dot" /> Deployed across 4 continents.
             </span>
+            <span className="footer-made-by">
+              Made by <a href="https://verdexo.com" target="_blank" rel="noopener noreferrer" className="made-by-link">Verdexo Ventures Pvt Ltd</a>
+            </span>
           </div>
           <div className="footer-social">
             <a href="mailto:hello@axiom.ai">hello@axiom.ai</a>

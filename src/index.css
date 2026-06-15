@@ -4341,6 +4341,44 @@ img { display: block; max-width: 100%; }
   color: var(--accent);
 }
 
+.footer-made-by {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-tertiary);
+  font-size: 11px;
+}
+
+.made-by-link {
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-left: 4px;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s var(--ease);
+}
+
+.made-by-link:hover {
+  color: var(--accent);
+}
+
+.made-by-link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s var(--ease);
+}
+
+.made-by-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 /* Faint Giant Ambient Backdrop Logo */
 .footer-giant-brand {
   position: absolute;
